@@ -1,0 +1,57 @@
+[
+    {
+      "title": "Frontend Development",
+      "content": "Frontend development involves creating the user interface and user experience for web applications.",
+      "subItems": [
+        {
+          "title": "HTML & CSS",
+          "content": "HTML and CSS are the foundational technologies for building web pages."
+        },
+        {
+          "title": "JavaScript",
+          "content": "JavaScript is a programming language that allows you to create dynamically updating content, control multimedia, animate images, and pretty much everything else."
+        },
+        {
+          "title": "React",
+          "content": "React is a JavaScript library for building user interfaces."
+        }
+      ]
+    },
+    {
+      "title": "Backend Development",
+      "content": "Backend development focuses on server-side logic, databases, and application architecture.",
+      "subItems": [
+        {
+          "title": "Node.js",
+          "content": "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine."
+        },
+        {
+          "title": "Express.js",
+          "content": "Express.js is a web application framework for Node.js, designed for building web applications and APIs."
+        },
+        {
+          "title": "Databases",
+          "content": "Databases are used to store and manage data. Examples include MySQL, PostgreSQL, and MongoDB."
+        }
+      ]
+    },
+    {
+      "title": "DevOps",
+      "content": "DevOps involves practices and tools to automate and integrate the processes of software development and IT operations.",
+      "subItems": [
+        {
+          "title": "Continuous Integration",
+          "content": "Continuous Integration (CI) is a practice where developers frequently merge their code changes into a central repository, followed by automated builds and tests."
+        },
+        {
+          "title": "Continuous Deployment",
+          "content": "Continuous Deployment (CD) is a software release process that uses automated testing to validate if changes to a codebase are correct and stable for immediate autonomous deployment to a production environment."
+        },
+        {
+          "title": "Containerization",
+          "content": "Containerization involves encapsulating an application and its dependencies into a container that can run consistently across different computing environments. Examples include Docker and Kubernetes."
+        }
+      ]
+    }
+  ]
+  

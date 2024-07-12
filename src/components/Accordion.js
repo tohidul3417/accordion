@@ -15,11 +15,14 @@ function Accordion() {
   }, []);
 
   return (
-    <div>
+    <div className="container">
       {items.map((item, index) => (
-        <div>
-          <AccordionItem item={item} isOpen={openIndex === index}
-          onClick={() => toggleItem(index)} />
+        <div key={index}>
+          <AccordionItem
+            item={item}
+            isOpen={openIndex === index}
+            onClick={() => toggleItem(index)}
+          />
         </div>
       ))}
     </div>

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import AccordionItem from "./AccordionItem";
 
-function Accordion({ items }) {
+function Accordion() {
   const [items, setItems] = useState([]);
-  const [isOpen, setIsOpen] = useState(null);
-  const onItemClick = (index) => {
-    setIsOpen(isOpen === null ? index : null);
+  const [openIndex, setOpenIndex] = useState(null);
+  const toggleItem = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
   };
 
   useEffect(() => {
@@ -13,15 +13,13 @@ function Accordion({ items }) {
       .then((response) => response.json())
       .then((data) => setItems(data));
   }, []);
+
   return (
     <div>
       {items.map((item, index) => (
         <div>
-          <Accordion
-            item={item}
-            isOpen={isOpen}
-            onClick={() => onItemClick(index)}
-          />
+          <AccordionItem item={item} isOpen={openIndex === index}
+          onClick={() => toggleItem(index)} />
         </div>
       ))}
     </div>

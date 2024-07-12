@@ -1,11 +1,11 @@
 import React from "react";
-// Import Accordion
+import Accordion from "./components/Accordion";
 
 function App() {
     return (
         <div>
             <h1>Accordion</h1>
-            {/* Accordion */}
+            <Accordion />
         </div>
     )
 }

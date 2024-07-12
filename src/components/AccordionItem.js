@@ -17,7 +17,7 @@ function AccordionItem({ item, isOpen, onClick }) {
             {item.subItems &&
               item.subItems.length > 0 &&
               item.subItems.map((subItem, index) => (
-                <div onClick={toggleSubItem(index)}>
+                <div onClick={() => toggleSubItem(index)}>
                   <h3>{subItem.title}</h3>
                   {subItemOpen && <p>{subItem.content}</p>}
                 </div>

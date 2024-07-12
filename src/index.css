@@ -5,7 +5,7 @@
 .accordion-item {
     max-width: 500px;
     margin: 20px;
-    background-color: #ccc;
+    background-color: #fff;
     color: #333;
 }
 
@@ -22,6 +22,7 @@
 .accordion-item-content {
     margin-bottom: 10px;
     padding: 10px;
+    color: black;
 }
 
 .accordion-sub-items {
@@ -31,4 +32,8 @@
 
 .accordin-sub-item {
     margin: 5px;
+}
+
+.accordion-sub-title button {
+ cursor: pointer;
 }
